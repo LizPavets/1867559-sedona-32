@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap; 
+}
+  
+body {
+  font-family: "PT Sans" sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hotel-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+
+.button-submit {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-header {
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 25,88px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-index {
+  color: #000000;
+  background-color: #FFFFFF;
+  background-image: url("images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  
+}
+
+.advantages-list {
+  text-align: center;
+}
+.advantages-item-picture {
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  
+}
+.index-columns {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.index-columns_2 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+ 
+.advantages-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search-hotel {
+  text-align: center;
+}
+.search-date {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.newsletter {
+  background-image: url("images/background.png");
+  text-align: center;
+  color: #333333;
+} 
+
+
+.footer-contact-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.footer-made-about-text {
+  width: 114,9px;
+  height: 32,9px;
+  color: #000000;
+  
+}
