@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
@@ -16,7 +17,7 @@
             <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
-        <img class="logo" src="" alt="Логотип Седона">
+        <img class="logo" src="images/sedona.svg" width="138" height="70" alt="Логотип Седона">
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -29,7 +30,8 @@
                 Нравиться
               </span>
             </a>
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link" href="#"></a>
+            <button class="button" type="submit">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -40,7 +42,7 @@
         <h1 class="main-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="button" href="index.html">
+            <a class="breadcrumbs-button" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -123,6 +125,7 @@
         </form>
 
         <h2 class="inner-main-title">Найдено гостиниц: 38</h2>
+        <div class="sorting-container">
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
@@ -138,50 +141,51 @@
         <a href="#" class="button button-light">
           <span class="visually-hidden">Показать с описанием</span> <!-- Я не поняла, что это за вторая картинка. Написала, что первое в голову пришло)) -->
         </a>
-        <a href="#" class="button">
+        <a href="#" class="button-list">
           <span class="visually-hidden">Показать список</span>
         </a>
+        </div>       
 
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/amarahotel.jpg" width="180" height="120" alt="">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <span class="product-card-type">Гостиница</span>
             <span class="product-card-price">От 4000 ₽</span>
             <br /><a href="#" class="product-card-button button">Подробнее</a>
-            <a href="#" class="product-card-button button">В избранное</a>
+            <a href="#" class="product-card-important button">В избранное</a>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/deserthotel.jpg" width="180" height="120" alt="">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
             <span class="product-card-type">Мотель</span>
             <span class="product-card-price">От 3000 ₽</span>
             <a href="#" class="product-card-button button">Подробнее</a>
-            <a href="#" class="product-card-button button">В избранное</a>
+            <a href="#" class="product-card-important button">В избранное</a>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="images/villashotel.jpg" width="180" height="120" alt="">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <span class="product-card-type">Апартаменты</span>
             <span class="product-card-price">От 2000 ₽</span>
             <a href="#" class="product-card-button button">Подробнее</a>
-            <a href="#" class="product-card-button button">В избранное</a>
+            <a href="#" class="product-card-important-1 button">В избранное</a>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="">
+            <img class="product-card-image" src="images/greentreehotel.jpg" width="180" height="120" alt="">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
             <span class="product-card-type">Гостиница</span>
             <span class="product-card-price">От 3000 ₽</span>
             <a href="#" class="product-card-button button">Подробнее</a>
-            <a href="#" class="product-card-button button">В избранное</a>
+            <a href="#" class="product-card-important button">В избранное</a>
           </li>
         </ul>
         <button class="dowload-product" type="submit">Загрузить ещё</button>
@@ -223,7 +227,7 @@
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
           </p>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
+          <button class="button-submit" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
