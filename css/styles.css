@@ -22,15 +22,23 @@ body {
   background-color: #FFFFFF;
 }
 
+nav.logo {
+  text-align: center;
+}
+
 .button {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  font-weight: bold;
   text-align: center;
   color: #FFFFFF;
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+  left: 80.67%;
+  right: 6%;
+  border-radius: 4px;
 }
 
 .hotel-button {
@@ -42,17 +50,26 @@ body {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase; 
+  width: 575px;
+  height: 60px;
+  left: 352px;
+  top: 2633px;
+  border-radius: 10px;
 }
 
 .button-submit {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  font-weight: bold;
   text-align: center;
   color: #FFFFFF;
   background-color: #83B3D3;
   text-decoration: none;
   text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .button-light {
@@ -86,8 +103,9 @@ body {
 .main-index {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("images/viewbackground.jpg");
-  background-size: 100% auto;
+  background-image: url("../images/viewbackground.jpg");
+  width: 1200px;
+  height: 485px;
   background-repeat: no-repeat;
 }
 
@@ -96,13 +114,82 @@ body {
   background-color: #ffffff;
 }
 
-.advantages-list {
+.services {
+  width: 400px;
+  height: 384px;
+  left: 40px;
+  top: 1216px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.house {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.accessories {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.service-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.advantages-description {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);;
+}
+
+.advantages-item-1 {
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.name {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  color: #333333;
   text-align: center;
 }
 
 .advantages-item-picture {
   color: #FFFFFF;
   background-color: #83B3D3;
+  width: 400px;
+  height: 384px;
+  text-align: center;
 }
 
 .index-columns {
@@ -127,36 +214,58 @@ body {
 }
 
 .search-hotel {
+  width: 1200px;
+  height: 417px;
+  background: #FFFFFF;
   text-align: center;
+}
+
+.search-question {
+  font-weight: bold;
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .search-date {
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
   color: #333333;
 }
 
 .newsletter {
-  background-image: url("images/background.png");
+  background-image: url("../images/background.png");
+  width: 1200px;
+  height: 411px;
   text-align: center;
   color: #333333;
 } 
 
-.footer-contact {
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000000;
+.newsletter-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
-.footer-made {
-  width: 114,9px;
-  height: 32,9px;
-  color: #000000;
-  text-align: right;
+.newsletter-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.field {
+  width: 600px;
+  height: 60px;
+  left: 840px;
+  top: 3041px;
+  background: #F2F2F2;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .main-header-title {
@@ -270,3 +379,18 @@ body {
   text-transform: uppercase;
 }
 
+.footer-contact {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.footer-made {
+  width: 114,9px;
+  height: 32,9px;
+  color: #000000;
+  text-align: right;
+}
