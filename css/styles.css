@@ -148,13 +148,14 @@ img.logo-main {
   margin: 0 auto;
   color: #333333;
   background-color: #ffffff;
-  background-image: url("../images/catalogbackground.png");
-  background-repeat: no-repeat;
 }
 
-.page-container {
+.catalog-container {
   width: 1200px;
   margin: 0 auto;
+  background-image: url("../images/catalogbackground.png");
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .advantages-list {
