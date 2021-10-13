@@ -30,12 +30,12 @@ body {
   background-color: #FFFFFF;
 }
 
-img.logo {
+.logo {
   display: block;
-  margin: 0 auto;
+  margin: 0;
 }
 
-img.logo-main {
+.main-logo {
   display: block;
   margin: 0 auto;
 }
@@ -99,7 +99,6 @@ img.logo-main {
 
 .main-header {
   color: #000000;
-  background: #FFFFFF;
 }
 
 .navigation {
@@ -111,13 +110,19 @@ img.logo-main {
 .navigation-list {
   margin-left: 71px;
   padding: 0;
-  width: 330px;
+  width: 450px;
 }  
+
+.navigation-user {
+  padding: 0;
+  max-width: 230px;
+  margin-left: auto;
+} 
 
 .navigation-link {
   font-family: "PT Sans Bold";
   font-size: 20px;
-  line-height: 25,88px;
+  line-height: 26px;
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
@@ -125,20 +130,17 @@ img.logo-main {
   text-transform: uppercase;
 }
 
-.navigation-user {
-  max-width: 230px;
-  margin-left: auto;
-}
+
 
 .main-container {
   margin: 0 auto;
-  flex-grow: 1;
 }
 
 .main-index {
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/viewbackground.jpg");
+  width: 1200px;
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -250,7 +252,6 @@ img.logo-main {
 .advantages-item-picture {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   padding: 0;
   color: #FFFFFF;
   background-color: #83B3D3;
@@ -262,19 +263,15 @@ img.logo-main {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
+  width: 400px;
+  height: 60px;
+  left: 40px;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
-}
-
-.index-columns {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.index-columns_2 {
-  background-color: rgba(131, 179, 211, 0.2);
 }
  
 .search-hotel {
@@ -449,6 +446,11 @@ img.logo-main {
   text-transform: uppercase;
 }
 
+.main-footer {
+  width: 1200px;
+  background-color: #ffffff;
+}
+
 .page-footer-container {
   display: flex;
   width: 1200px;
@@ -462,8 +464,7 @@ img.logo-main {
 
 .footer-contact {
   width: 720px;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: 0 40px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
