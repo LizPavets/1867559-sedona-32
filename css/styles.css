@@ -511,6 +511,11 @@ body {
   background-color: #83B3D3;
 }
 
+.one {
+  background-color: #E5E5E5;
+
+}
+
 .pagination-link {
   font-family: "PT Sans Bold";
   color: #FFFFFF;
@@ -522,11 +527,9 @@ body {
 .pagination-current {
   font-family: "PT Sans Bold";
   color: #000000;
-  background-color: #E5E5E5;
   font-size: 20px;
   text-decoration: none;
   line-height: 26px;
-  
 }
 
 .main-footer {
