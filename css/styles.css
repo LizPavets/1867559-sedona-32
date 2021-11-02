@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans Bold";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap; 
 }
 
@@ -28,6 +28,11 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.container-large {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -57,6 +62,7 @@ body {
   font-family: "PT Sans Bold";
   font-size: 16px;
   line-height: 21px;
+  width: 160px;
   text-align: center;
   color: #FFFFFF;
   background-color: #756257;
@@ -96,11 +102,6 @@ body {
   width: 200px;
   height: 60px;
   border-radius: 0px 10px 10px 0px;
-}
-
-.button-light {
-  color: #000000;
-  background-color: #FFFFFF;
 }
 
 .button-list {
@@ -145,6 +146,7 @@ body {
   padding: 0;
   max-width: 230px;
   margin-left: auto;
+  margin-right: 72px;
   list-style-type: none;
 }
 
@@ -212,6 +214,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -219,6 +222,7 @@ body {
 .advantages-list {
   display: flex;
   width: 1200px;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -233,7 +237,7 @@ body {
   box-sizing: border-box;
 }
 
-.advantages-item {
+.advantages-item-text {
   width: 400px;
   height: 384px;
 }
@@ -324,6 +328,10 @@ body {
 }
 
 .newsletter {
+  margin-top: 91px;
+  margin-bottom: 40px;
+  width: 1200px;
+  height: 411px;
   background-image: url("../images/background.png");
   background-size: auto;
   text-align: center;
@@ -331,7 +339,8 @@ body {
 } 
 
 .newsletter-title {
-  margin: 94px 240px 15px 240px;
+  margin: 0;
+  padding: 95px 240px 15px 240px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -341,17 +350,24 @@ body {
 }
 
 .newsletter-description {
+  margin: 0;
+  padding: 0 240px 26px 240px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
 }
 
+.newsletter-email {
+  display: inline-block;
+  margin: 0;
+}
+
 .field {
   width: 600px;
   height: 60px;
-  left: 840px;
-  top: 3041px;
+  margin: 0;
+  padding: 0;
   background: #F2F2F2;
   border-radius: 0 10px 10px 0px;
 }
@@ -362,7 +378,6 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
-  
 }
 
 .breadcrumbs {
@@ -418,9 +433,18 @@ body {
   background-color: #FFFFFF;
 }
 
+.catalog-title {
+  font-family: "PT Sans Bold";
+  font-size: 30px;
+  line-height: 39px;
+  margin: 50px 191px 45px 0;
+  text-transform: uppercase;
+}
+
 .catalog-sorting-type {
   width: 287px;
   height: 48px;
+  margin: 44px 81px 42px 0;
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
@@ -443,39 +467,49 @@ body {
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
+  background-color: #FFFFFF;
   margin-right: 8px;
+  margin-top: 44px;
 }
 
 .button-light-current {
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
+  background-color: #FFFFFF;
+  margin-right: 72px;
+  margin-top: 44px;
 }
 
 .product-list {
   display: grid;
-  gap: 61px;
+  gap: 30px;
+  width: 1056px;
   list-style-type: none;
-  margin-left: 72px;
+  margin: 0 0 31px 72px;
   padding: 0;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 30px;
 }
 
 .product-card {
   display: grid;
-  grid-template-columns: 180px 151px 160px 521px; 
-  grid-template-rows: 31px 54px 37px;
+  grid-template-columns: 180px 190px 163px min-content;
+  grid-template-rows: auto auto 1fr auto;
   width: 1056px;
   background-color: #FFFFFF;
+  border-top: 1px solid #E5E5E5;
+  padding-top: 31px;
 }
 
 .product-card-image {
   grid-column: 1 / 2;
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
 }
 
 .product-card-title {
   grid-column: 2 / 4;
-  grid-row: 1 / 2;
+  grid-row: 2 / 3;
   margin: 0 0 0 37px;
   font-family: "PT Sans Bold";
   font-size: 24px;
@@ -486,7 +520,7 @@ body {
 
 .product-card-description {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   font-size: 18px;
   line-height: 23px;
   margin-left: 37px;
@@ -495,7 +529,7 @@ body {
 
 .product-card-price {
   grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   font-size: 18px;
   line-height: 23px;
   margin-left: 8px;
@@ -505,14 +539,15 @@ body {
 
 .product-card-button {
   grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
+  width: 151px;
   margin-left: 37px;
   padding: 9px 0 10px 0;
 }
 
 .product-card-important {
   grid-column: 3 / 4;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   margin-left: 8px;
   color: #FFFFFF;
   background-color: #83B3D3;
@@ -520,7 +555,7 @@ body {
 
 .product-card-important-favorite {
   grid-column: 3 / 4;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   margin-left: 8px;
   color: #FFFFFF;
   background-color: #7DB54F;
@@ -528,7 +563,7 @@ body {
 
 .product-card-rate-label {
   grid-column: 4 / 5;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   width: 160px;
   background-color: #F2F2F2;
   border-radius: 4px;
@@ -542,33 +577,42 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-align: center;
-  margin-left: 288px;
-  margin-bottom: 30px;
+  margin: 0 287px 30px 288px;
   color: #FFFFFF;
   width: 625px;
   height: 55px;
   background-color: #83B3D3;
 }
 
+.line-img {
+  grid-column: 1 / 5;
+  margin-bottom: 31px;
+  margin-left: 72px;
+}
+
 .pagination-container {
   display: flex;
   justify-content: space-between;
+  width: 1056px;
+  margin-left: 72px;
   background-color: #FFFFFF;
+  border-top: 1px solid #E5E5E5;
 }
 
 .pagination {
   display: flex;
-  margin-left: 72px;
+  margin-top: 31px;
+  margin-bottom: 89px;
   padding: 0;
   list-style-type: none;
 }
 
 .pagination-item {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   margin-right: 8px;
-  margin-top: 31px;
-  padding: 15px 19px 15px 19px;
   width: 55px;
   height: 55px;
   background-color: #83B3D3;
@@ -593,10 +637,37 @@ body {
 }
 
 .sorting-page-hotels .select-control {
-  margin: 64px 72px 93px 51px;
+  margin: 34px 0 93px 51px;
+  padding-left: 17px;
   width: 160px;
   height: 48px;
   border: 2px solid #E6E6E6;
+}
+
+.catalog-newsletter {
+  background-size: auto;
+  text-align: center;
+  margin-bottom: 138px;
+}
+
+.catalog-newsletter-title {
+  margin: 0 240px 29px 240px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-newsletter-description {
+  font-size: 22px;
+  line-height: 26px;
+  width: 720px;
+  height: 72px;
+  margin: 0 240px 26px 240px;
+  text-align: center;
+  color: #333333;
 }
 
 .main-footer {
