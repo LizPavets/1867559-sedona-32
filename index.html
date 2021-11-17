@@ -13,15 +13,17 @@
             <ul class="navigation-list">
               <li class="navigation-item">
                 <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
-              </li> 
+              </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="about.html">О Седоне</a>
               </li>
-              <li class="navigation-item"> 
+              <li class="navigation-item">
                 <a class="navigation-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
-            <a href="index.html"><img class="header-logo" src="images/sedona.svg" width="138" height="65" alt="Логотип Седона"></a>
+            <a href="index.html" class="header-logo-link">
+              <img class="header-logo" src="images/sedona.svg" alt="Логотип Седона">
+            </a>
             <ul class="navigation-user">
               <li class="navigation-user-item">
                 <a class="navigation-user-link search" href="#">
@@ -31,7 +33,7 @@
                   <span class="visually-hidden">Поиск</span>
                 </a>
               </li>
-              <li class="navigation-user-item">  
+              <li class="navigation-user-item">
                 <a class="navigation-user-link" href="#">
                   <svg class="navigation-user-icon-liked" aria-hidden="true" focusable="false" width="18" height="27" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9 27a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 10c1.3 0 2.5.5 3.5 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 24.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
@@ -42,11 +44,11 @@
                 <div class="popover popover-liked">
                   <div class="popover-content">
                     <h2 class="visually-hidden popover-title">Избранное</h2>
-                    <ul class="liked-items-list">
-                      <li class="liked-item">
-                        <a href="#" class="liked-img-title-description">
+                    <ul class="popover-liked-list">
+                      <li class="popover-liked-item">
+                        <a href="#" class="popover-liked-item-data-link">
                           <img class="liked-item-image" src="images/deserthotel.jpg" width="48" height="48" alt="">
-                          <div class="liked-title-description">
+                          <div class="liked-item-data">
                             <p class="liked-item-title">Desert Quail Inn</p>
                             <p class="liked-item-description">Мотель</p>
                           </div>
@@ -59,10 +61,10 @@
                           <span class="visually-hidden">Удалить из корзины</span>
                         </button>
                       </li>
-                      <li class="liked-item">
-                        <a href="#" class="liked-img-title-description">
+                      <li class="popover-liked-item">
+                        <a href="#" class="popover-liked-item-data-link">
                           <img class="liked-item-image" src="images/villashotel.jpg" width="48" height="48" alt="">
-                          <div class="liked-title-description">
+                          <div class="liked-item-data">
                             <p class="liked-item-title">Villas at Poco Diablo</p>
                             <p class="liked-item-description">Апартаменты</p>
                           </div>
@@ -80,81 +82,87 @@
                   <button class="popover-button" type="button">Все избранные</button>
                 </div>
               </li>
-              <li class="navigation-user-item">  
+              <li class="navigation-user-item">
                 <button class="button" type="button">Хочу сюда!</button>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-      
+
       <main class="main-index">
         <div class="main-container">
-          <img class="main-logo" alt="Добро пожаловать в Седону" src="images/welcome.svg" width="450" height="352"> 
+          <img class="main-logo" alt="Добро пожаловать в Седону" src="images/welcome.svg" width="450" height="352">
           <h1 class="visually-hidden">Седона</h1>
           <img class="logo-divider" alt="Разделение фона" src="images/divider.svg" width="1200" height="57">
           <section class="advantages">
             <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
             <ul class="advantages-services-list">
-              <li class="advantages-item-picture">
+              <li class="advantages-item advantages-item-picture">
                 <div class="advantages-item-text">
                   <h3 class="advantages-item-title">Настоящий <br> городок</h3>
                   <p class="advantages-title-number">— №1 —</p>
                   <p class="advantages-title-description">Седона - не аттракцион <br>для туристов, там течёт <br> своя жизнь</p>
                 </div>
                 <img class="advantages-item-img" src="images/city.jpg" alt="Настоящий городок" width="800" height="384">
+                <ul class="services-list">
+                  <li class="services-item">
+                    <svg class="services-item-icon-hm" aria-hidden="true" focusable="false" width="75" height="72" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M29.7 65h16V41.2h-16V65Zm2.9-20.9h10.1v18H32.6v-18Z"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="m72.8 39.3 2.1-2.1-9.9-9.9V0H51.1v13.6L37.5 0 .2 37.2l2.1 2.1 7.8-7.8v37.6h-4V72H70v-2.9h-5.1V31.5l7.9 7.8ZM62 69.1H13V28.5L37.5 4.1 62 28.5v40.6Zm0-44.7-7.9-7.9V2.9H62v21.5Z"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9 27.1c0 4.3 3.5 7.7 7.7 7.7 4.3 0 7.8-3.5 7.8-7.7 0-4.3-3.5-7.7-7.8-7.7a7.7 7.7 0 0 0-7.7 7.7Zm7.8-5a5 5 0 0 1 5 4.9 5 5 0 0 1-5 4.9 5 5 0 0 1-5-4.9 5 5 0 0 1 5-4.9ZM20.1 41.2h-3v3.9h3v-3.9ZM26 41.2h-3v3.9h3v-3.9ZM20.1 47.2h-3v3.9h3v-3.9ZM26 47.2h-3v3.9h3v-3.9ZM52 41.2h-3v3.9h3v-3.9ZM57.9 41.2h-3v3.9h3v-3.9ZM52 47.2h-3v3.9h3v-3.9ZM57.9 47.2h-3v3.9h3v-3.9Z"/>
+                    </svg>
+                    <h4 class="service-title">Жилье</h4>
+                    <p class="service-description">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
+                  </li>
+                  <li class="services-item">
+                    <svg class="services-item-icon-et" aria-hidden="true" focusable="false" width="74" height="70" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M69.9 46.7H4.1A4.2 4.2 0 0 0 0 51v3.5c0 2.4 1.9 4.3 4.1 4.3H5v1.1A10 10 0 0 0 14.6 70h44.6c5.3 0 9.6-4.5 9.6-10.1v-1.1h.9c2.3 0 4.1-1.9 4.1-4.3V51a4 4 0 0 0-3.9-4.3ZM66 59.9c0 3.9-3 7-6.7 7H14.6a6.9 6.9 0 0 1-6.7-7v-1.1H66v1.1Zm5.1-5.4c0 .7-.6 1.3-1.2 1.3H4c-.7 0-1.2-.6-1.2-1.3V51c0-.7.6-1.3 1.2-1.3h65.8c.7 0 1.2.6 1.2 1.3l.1 3.5ZM15.6 38.4l5.4 4.1 5.3-4.1 5.3 4.1 5.3-4.1 5.4 4.1 5.3-4.1 5.3 4.1 5.4-4.1 5.3 4.1 6.2-4.7-1.7-2.5-4.5 3.4-5.3-4.1-5.4 4.1-5.3-4.1-5.3 4.1-5.4-4.1-5.3 4.1-5.3-4.1-5.3 4.1-5.4-4.1-5.3 4.1-4.5-3.4-1.7 2.5 6.2 4.7 5.3-4.1ZM8 31.5h60.8l.1-1.9v-1.2C68.2 12.7 54.2 0 37 0 19.7 0 5.7 12.7 5 28.5v1.2l.1 1.9H8v-.1ZM37 3c15.6 0 28.4 11.3 29 25.5H8C8.6 14.4 21.4 3 37 3Z"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M37 17.3a2 2 0 0 0 1.9-2 2 2 0 0 0-1.9-2 2 2 0 0 0-1.9 2c0 1.1.9 2 1.9 2ZM29.2 12.2a2 2 0 0 0 1.9-2 2 2 0 0 0-1.9-2 2 2 0 0 0-1.9 2c0 1.1.9 2 1.9 2ZM44.7 12.2a2 2 0 0 0 1.9-2 2 2 0 0 0-1.9-2 2 2 0 0 0-1.9 2c0 1.1.9 2 1.9 2Z"/>
+                    </svg>
+                    <h4 class="service-title">Еда</h4>
+                    <p class="service-description">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!</p>
+                  </li>
+                  <li class="services-item">
+                    <svg class="services-item-icon-as" aria-hidden="true" focusable="false" width="64" height="76" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M61.1 22.5H36.3c13.8-6.9 14.9-11.3 14.4-13.7-1.2-4-5.7-7-10-5.4-5.6 2.1-7.1 10.4-8.6 16.4-2-6.1-3.8-13.8-8.2-17.7a7.3 7.3 0 0 0-5.8-2c-4 .4-9.8 5.4-7.5 11 2.3 5.4 9.7 8.8 14.6 11.5H2.9A2.9 2.9 0 0 0 0 25.5v11.3c0 1.6 1.3 2.9 2.9 2.9h.3V76H61V39.6h.1c1.6 0 2.9-1.3 2.9-2.9V25.4c0-1.6-1.3-2.9-2.9-2.9ZM42.4 5.9c2.1-.3 5 1.3 5.3 3.2.4 2.8-3.4 5.3-5.1 6.4-2.5 1.7-4.9 2.6-7.3 4.1.9-3.7 2.5-13 7.1-13.7Zm-22.9 10c-2.2-1.5-6.5-4.4-6.4-7.8.1-3.6 5.7-6.6 8.8-3.9 3.9 3.4 5.7 11.1 7.1 16.6-3.2-1.5-6.3-2.8-9.5-4.9Zm6 57.1H6.1V39.6h19.4V73Zm0-36.5H3v-11h22.5v11Zm10.2 0V73h-7.2V25.6h7.2v10.9ZM58 73H38.6V39.6H58V73Zm2.9-36.5H38.6v-11h22.3v11Z"/>
+                    </svg>
+                    <h4 class="service-title">Сувениры</h4>
+                    <p class="service-description">Не только китайского, <br> но и настоящего местного <br> производства!</p>
+                  </li>
+                </ul>
               </li>
-              <li class="services-item">
-                <svg class="services-item-icon-hm" aria-hidden="true" focusable="false" width="75" height="72" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M29.7 65h16V41.2h-16V65Zm2.9-20.9h10.1v18H32.6v-18Z"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="m72.8 39.3 2.1-2.1-9.9-9.9V0H51.1v13.6L37.5 0 .2 37.2l2.1 2.1 7.8-7.8v37.6h-4V72H70v-2.9h-5.1V31.5l7.9 7.8ZM62 69.1H13V28.5L37.5 4.1 62 28.5v40.6Zm0-44.7-7.9-7.9V2.9H62v21.5Z"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9 27.1c0 4.3 3.5 7.7 7.7 7.7 4.3 0 7.8-3.5 7.8-7.7 0-4.3-3.5-7.7-7.8-7.7a7.7 7.7 0 0 0-7.7 7.7Zm7.8-5a5 5 0 0 1 5 4.9 5 5 0 0 1-5 4.9 5 5 0 0 1-5-4.9 5 5 0 0 1 5-4.9ZM20.1 41.2h-3v3.9h3v-3.9ZM26 41.2h-3v3.9h3v-3.9ZM20.1 47.2h-3v3.9h3v-3.9ZM26 47.2h-3v3.9h3v-3.9ZM52 41.2h-3v3.9h3v-3.9ZM57.9 41.2h-3v3.9h3v-3.9ZM52 47.2h-3v3.9h3v-3.9ZM57.9 47.2h-3v3.9h3v-3.9Z"/>
-                </svg>
-                <h4 class="service-title">Жилье</h4>
-                <p class="service-description">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
-              </li>
-              <li class="services-item"> 
-                <svg class="services-item-icon-et" aria-hidden="true" focusable="false" width="74" height="70" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M69.9 46.7H4.1A4.2 4.2 0 0 0 0 51v3.5c0 2.4 1.9 4.3 4.1 4.3H5v1.1A10 10 0 0 0 14.6 70h44.6c5.3 0 9.6-4.5 9.6-10.1v-1.1h.9c2.3 0 4.1-1.9 4.1-4.3V51a4 4 0 0 0-3.9-4.3ZM66 59.9c0 3.9-3 7-6.7 7H14.6a6.9 6.9 0 0 1-6.7-7v-1.1H66v1.1Zm5.1-5.4c0 .7-.6 1.3-1.2 1.3H4c-.7 0-1.2-.6-1.2-1.3V51c0-.7.6-1.3 1.2-1.3h65.8c.7 0 1.2.6 1.2 1.3l.1 3.5ZM15.6 38.4l5.4 4.1 5.3-4.1 5.3 4.1 5.3-4.1 5.4 4.1 5.3-4.1 5.3 4.1 5.4-4.1 5.3 4.1 6.2-4.7-1.7-2.5-4.5 3.4-5.3-4.1-5.4 4.1-5.3-4.1-5.3 4.1-5.4-4.1-5.3 4.1-5.3-4.1-5.3 4.1-5.4-4.1-5.3 4.1-4.5-3.4-1.7 2.5 6.2 4.7 5.3-4.1ZM8 31.5h60.8l.1-1.9v-1.2C68.2 12.7 54.2 0 37 0 19.7 0 5.7 12.7 5 28.5v1.2l.1 1.9H8v-.1ZM37 3c15.6 0 28.4 11.3 29 25.5H8C8.6 14.4 21.4 3 37 3Z"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M37 17.3a2 2 0 0 0 1.9-2 2 2 0 0 0-1.9-2 2 2 0 0 0-1.9 2c0 1.1.9 2 1.9 2ZM29.2 12.2a2 2 0 0 0 1.9-2 2 2 0 0 0-1.9-2 2 2 0 0 0-1.9 2c0 1.1.9 2 1.9 2ZM44.7 12.2a2 2 0 0 0 1.9-2 2 2 0 0 0-1.9-2 2 2 0 0 0-1.9 2c0 1.1.9 2 1.9 2Z"/>
-                </svg>
-                <h4 class="service-title">Еда</h4>
-                <p class="service-description">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!</p>
-              </li> 
-              <li class="services-item"> 
-                <svg class="services-item-icon-as" aria-hidden="true" focusable="false" width="64" height="76" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M61.1 22.5H36.3c13.8-6.9 14.9-11.3 14.4-13.7-1.2-4-5.7-7-10-5.4-5.6 2.1-7.1 10.4-8.6 16.4-2-6.1-3.8-13.8-8.2-17.7a7.3 7.3 0 0 0-5.8-2c-4 .4-9.8 5.4-7.5 11 2.3 5.4 9.7 8.8 14.6 11.5H2.9A2.9 2.9 0 0 0 0 25.5v11.3c0 1.6 1.3 2.9 2.9 2.9h.3V76H61V39.6h.1c1.6 0 2.9-1.3 2.9-2.9V25.4c0-1.6-1.3-2.9-2.9-2.9ZM42.4 5.9c2.1-.3 5 1.3 5.3 3.2.4 2.8-3.4 5.3-5.1 6.4-2.5 1.7-4.9 2.6-7.3 4.1.9-3.7 2.5-13 7.1-13.7Zm-22.9 10c-2.2-1.5-6.5-4.4-6.4-7.8.1-3.6 5.7-6.6 8.8-3.9 3.9 3.4 5.7 11.1 7.1 16.6-3.2-1.5-6.3-2.8-9.5-4.9Zm6 57.1H6.1V39.6h19.4V73Zm0-36.5H3v-11h22.5v11Zm10.2 0V73h-7.2V25.6h7.2v10.9ZM58 73H38.6V39.6H58V73Zm2.9-36.5H38.6v-11h22.3v11Z"/>
-                </svg>
-                <h4 class="service-title">Сувениры</h4>
-                <p class="service-description">Не только китайского, <br> но и настоящего местного <br> производства!</p>
-              </li>  
-              <li class="advantages-item-picture">
+              <li class="advantages-item advantages-item-picture">
                 <img src="images/bridge.jpg" alt="Мост дьявола" width="800" height="384">
                 <div class="advantages-item-text">
                   <h3 class="advantages-item-title">Там есть <br> мост дьявола</h3>
                   <p class="advantages-title-number">— №2 —</p>
                   <p class="advantages-title-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-                </div>  
-              </li>
-            </ul>  
-            <ul class="advantages-list">
-              <li class="advantages-item">
-                <h3 class="advantages-item-title">Небольшая <br>плошадь</h3>
-                <p class="advantages-tit-number">— №3 —</p>
-                <p class="advantages-tit-description">Все достопримечательности находяться очень близко</p>
+                </div>
               </li>
               <li class="advantages-item">
-                <h3 class="advantages-item-title">Красивая <br>дорога</h3>
-                <p class="advantages-tit-number">— №4 —</p>
-                <p class="advantages-tit-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <div class="advantages-item-text advantages-item-text-dark">
+                  <h3 class="advantages-item-title">Небольшая <br>плошадь</h3>
+                  <p class="advantages-title-number">— №3 —</p>
+                  <p class="advantages-title-description">Все достопримечательности находяться очень близко</p>
+                </div>
               </li>
               <li class="advantages-item">
-                <h3 class="advantages-item-title">Мало <br>туристов</h3>
-                <p class="advantages-tit-number">— №5 —</p>
-                <p class="advantages-tit-description">Большинство едет в Гранд Каньон и толпится там</p>
+                <div class="advantages-item-text advantages-item-text-dark">
+                  <h3 class="advantages-item-title">Красивая <br>дорога</h3>
+                  <p class="advantages-title-number">— №4 —</p>
+                  <p class="advantages-title-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
               </li>
-            </ul> 
+              <li class="advantages-item">
+                <div class="advantages-item-text advantages-item-text-dark">
+                  <h3 class="advantages-item-title">Мало <br>туристов</h3>
+                  <p class="advantages-title-number">— №5 —</p>
+                  <p class="advantages-title-description">Большинство едет в Гранд Каньон и толпится там</p>
+                </div>
+              </li>
+            </ul>
           </section>
           <section class="search-hotel">
             <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
@@ -168,14 +176,14 @@
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="newsletter-email">
                 <label class="visually-hidden" for="newsletter-email">Email</label>
-                <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+                <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
               </div>
               <button class="button-submit" type="submit">Подписаться</button>
             </form>
-          </section> 
+          </section>
         </div>
-      </main>  
-  
+      </main>
+
       <footer class="footer container-small">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
@@ -220,10 +228,10 @@
             </svg>
           </a>
         </section>
-      </footer>  
+      </footer>
     </div>
 
-    <div class="modal-container modal-container-close">
+    <div class="modal-container modal-container-clo">
       <div class="modal modal-auth">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -232,23 +240,23 @@
               <label class="appointment-title" for="auth-date">Дата заезда:</label>
               <input class="appointment-form-field" value="27 апреля 2020" id="auth-date" name="appointment-date" placeholder="Укажите дату">
               <p class="appointment-info">Мы не можем отправить вас в прошлое.</p>
-            </p> 
+            </p>
             <p class="appointment-form-group">
               <label class="appointment-title" for="auth-date">Дата выезда:</label>
               <input class="appointment-form-field" value="1 сентября 2021" id="auth-date" name="appointment-date" placeholder="Укажите дату">
               <p class="appointment-information">На эти даты есть свободные номера. Пока есть.</p>
-            </p> 
+            </p>
             <div class="amount">
               <label class="amount-of-adults" for="amount-of-adults">Взрослые:</label>
               <button class="button-min" type="button" name="min-adult"></button>
               <input class= "amount-field" type="text" name="amount-of-adults" value="2" id="amount-of-adults">
               <button class="button-pluse" type="button" name="plus-adult"></button>
               <label class="amount-of-children" for="amount-of-children">Дети:</label>
-              <div>
+              <div> 
                 <a class="info-link" href="#">
                   <svg class="info-icon" aria-hidden="true" focusable="false" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
-                  </svg> 
+                  </svg>
                   <span class="info-title">i</span>
                 </a>
                 <div class="popover-info">
@@ -256,13 +264,13 @@
                     <p class="popover-description">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                   </div>
                 </div>
-              </div>    
+              </div>
               <button class="button-min" type="button" name="min-children"><span class="icon-min"></span></button>
               <input class= "amount-field" type="text" name="amount-of-children" value="1" id="amount-of-children">
               <button class="button-pluse" type="button" name="plus-children"><span class="icon-plus"></span></button>
             </div>
             <button class="modal-button" type="submit">Найти</button>
-          </form>  
+          </form>
         </section>
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
