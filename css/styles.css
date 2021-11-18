@@ -1967,7 +1967,6 @@ body {
 }
 
 .modal-close-button:focus {
-  outline-width: #83B3D3;
   outline-width: 3px;
   outline-offset: -3px;
   outline-color: #756257;
