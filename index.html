@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -92,9 +93,11 @@
 
       <main class="main-index">
         <div class="main-container">
-          <img class="main-logo" alt="Добро пожаловать в Седону" src="images/welcome.svg" width="450" height="352">
-          <h1 class="visually-hidden">Седона</h1>
-          <img class="logo-divider" alt="Разделение фона" src="images/divider.svg" width="1200" height="57">
+          <section class="main-intro">
+            <img class="main-logo" alt="Добро пожаловать в Седону" src="images/welcome.svg" width="454" height="352">
+            <h1 class="visually-hidden">Седона</h1>
+            <img class="logo-divider" alt="Разделение фона" src="images/divider.svg" width="1200" height="57">
+          </section>
           <section class="advantages">
             <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -166,8 +169,8 @@
           </section>
           <section class="search-hotel">
             <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
-            <p class="search-question">Заинтересовались?</p>
-            <p class="search-date">Укажите продполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="search-title">Заинтересовались?</p>
+            <p class="search-description">Укажите продполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <button class="button hotel-button" type="button">Поиск гостиницы в Седоне</button>
           </section>
           <section class="newsletter">
@@ -237,13 +240,13 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="appointment-form-group">
-              <label class="appointment-title" for="auth-date">Дата заезда:</label>
-              <input class="appointment-form-field" value="27 апреля 2020" id="auth-date" name="appointment-date" placeholder="Укажите дату">
+              <label class="appointment-title" for="auth-date-from">Дата заезда:</label>
+              <input class="appointment-form-field" value="27 апреля 2020" id="auth-date-from" name="appointment-date" placeholder="Укажите дату">
               <p class="appointment-info">Мы не можем отправить вас в прошлое.</p>
             </p>
             <p class="appointment-form-group">
-              <label class="appointment-title" for="auth-date">Дата выезда:</label>
-              <input class="appointment-form-field" value="1 сентября 2021" id="auth-date" name="appointment-date" placeholder="Укажите дату">
+              <label class="appointment-title" for="auth-date-till">Дата выезда:</label>
+              <input class="appointment-form-field" value="1 сентября 2021" id="auth-date-till" name="appointment-date" placeholder="Укажите дату">
               <p class="appointment-information">На эти даты есть свободные номера. Пока есть.</p>
             </p>
             <div class="amount">
