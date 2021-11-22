@@ -1226,7 +1226,8 @@ body {
   width: 287px;
   height: 4px;
   margin-top: 28px;
-  background-color: #333333;
+  /* background-color: #333333; */
+  background-color: rgb(255 255 255 / 20%);
 }
 
 .range-bar {
@@ -1962,7 +1963,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
@@ -1974,11 +1974,13 @@ body {
 }
 
 .modal {
-  position: relative;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 60px 70px 70px 70px;
   background-color: #FFFFFF;
-}
+} 
 
 .modal-content {
   width: 575px;
@@ -2075,6 +2077,10 @@ body {
   color: #000000;
 }
 
+.appointment-form {
+  margin-top: -105px;
+}
+
 .appointment-form-group {
   margin: 0;
 }
@@ -2088,13 +2094,13 @@ body {
   border: 4px solid transparent;
   box-sizing: border-box;
   background-image: url("../images/calendar.svg");
-  background-position: right;
+  background-position: 386px center;
   background-repeat: no-repeat;
   font: inherit;
 }
 
 .appointment-form-field:hover {
-  background: #E6E6E6;
+  background-color: #E6E6E6;
 }
 
 .appointment-form-field:focus {
@@ -2102,7 +2108,7 @@ body {
   outline-offset: -3px;
   outline-color: #83B3D3;
   outline-style: solid;
-  background: #E6E6E6;
+  background-color: #E6E6E6;
 }
 
 .appointment-form-field:active {
@@ -2110,7 +2116,7 @@ body {
   outline-offset: -3px;
   outline-color: #000000;
   outline-style: solid;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .appointment-info {
@@ -2118,7 +2124,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
-  margin: 0 0 0 152px;
+  margin: -5px 0 -15px 152px;
   padding: 0;
   color: #FF5757;
 }
@@ -2128,7 +2134,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
-  margin: 0 0 0 152px;
+  margin: -5px 0 40px 152px;
   padding: 0;
   color: #333333;
 }
@@ -2139,7 +2145,7 @@ body {
   align-items: center;
   height: 40px;
   width: 575px;
-  margin-top: 32px;
+  margin-top: -25px;
   box-sizing: border-box;
 }
 
@@ -2151,7 +2157,6 @@ body {
   line-height: 40px;
   width: 70px;
   margin: 0;
-  font: inherit;
 }
 
 .amount-of-adults,
@@ -2164,7 +2169,7 @@ body {
 }
 
 .amount-of-children {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .amount button[name="min-adult"] {
@@ -2187,16 +2192,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
 }
 
 .button-min:focus, .button-pluse:focus {
-  width: 25px;
-  height: 25px;
-  outline-width: 4px;
-  outline-offset: -4px;
+  outline-width: 3px;
+  outline-offset: -3px;
   outline-color: #83B3D3;
   outline-style: solid;
-  background-color: #ffffff;
 }
 
 .button-pluse {
@@ -2204,6 +2207,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f2f2f2;
+  border-radius: 0 4px 4px 0;
 }
 
 .amount-field {
@@ -2221,18 +2225,23 @@ body {
 
 .info-link {
   position: relative;
-  margin-left: 12px;
+  margin-left: 8px;
   transition: color ease-in-out .2s;
 }
 
 .info-icon {
+  margin-top: 10px;
   transition: fill ease-in-out .2s;
+}
+
+.info-icon {
+  fill: #68A2CA;
 }
 
 .info-title {
   position: absolute;
   top: -5px;
-  right: -4px;
+  right: -5px;
   width: 19px;
   height: 19px;
   font-size: 12px;
@@ -2246,7 +2255,7 @@ body {
 
 .popover-info {
   position: absolute;
-  top: 435px;
+  top: 395px;
   right: 100px;
   z-index: 1;
   width: 256px;
@@ -2276,5 +2285,3 @@ body {
   padding: 15px 18px 18px 22px;
   margin: 0;
 }
-
-
