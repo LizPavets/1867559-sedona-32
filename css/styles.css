@@ -134,12 +134,12 @@ body {
   height: 60px;
   border: 3px;
   font-family: "PT Sans Bold", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   background: #83B3D3;
   border-radius: 0 10px 10px 0;
-  font-size: 20px;
-  line-height: 26px;
   color: #ffffff;
   transition: background-color ease-in-out .2s;
   cursor: pointer;
@@ -203,14 +203,14 @@ body {
 }
 
 .button-reset {
-  font-family: "PT Sans Bold", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 23px;
   width: 100px;
   text-align: center;
   color: #FFFFFF;
-  margin: 20px auto 0;
+  margin: 18px auto 0;
   padding: 1px 0;
   background: transparent;
   text-decoration: none;
@@ -394,8 +394,9 @@ body {
   right: -6px;
   width: 19px;
   height: 19px;
-  font-size: 10px;
   font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  line-height: 13px;
   font-weight: 400;
   background-color: #7DB54F;
   color: #ffffff;
@@ -410,8 +411,6 @@ body {
   transform: translate(-50%, 100%);
   z-index: 1;
   width: 400px;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-weight: 400;
   background-color: #FFFFFF;
   min-height: 231px;
   border: 1px solid #E6E6E6;
@@ -462,6 +461,7 @@ body {
 .popover-liked-item-data-link {
   display: flex;
   text-decoration: none;
+  min-width: 250px;
   padding: 7px;
   border: 3px solid transparent;
   box-sizing: border-box;
@@ -500,6 +500,7 @@ body {
   font-family: "PT Sans Bold", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  line-height: 21px;
   margin: 0;
   color: #000000;
 }
@@ -508,6 +509,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 21px;
   margin: 0;
   color: #333333;
 }
@@ -546,6 +548,8 @@ body {
 .popover-button {
   position: absolute;
   font-family: "PT Sans Bold", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
   font-weight: 700;
   width: calc(100% + 2px);
   height: 60px;
@@ -555,8 +559,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-size: 16px;
-  line-height: 21px;
   background: #756257;
   border-radius: 0 0 20px 20px;
   cursor: pointer;
@@ -594,7 +596,7 @@ body {
 }
 
 .advantages-title {
-  margin: 58px auto 31px;
+  margin: 62px auto 31px;
   max-width: 720px;
   font-family: "PT Sans Bold", sans-serif;
   font-weight: 700;
@@ -607,10 +609,10 @@ body {
 
 .advantages-description {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  margin-bottom: 80px;
   font-size: 22px;
   line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 80px;
   color: #333333;
   text-align: center;
 }
@@ -676,6 +678,8 @@ body {
 .advantages-title-description {
   max-width: 250px;
   font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 400;
   height: 73px;
   text-align: center;
@@ -712,8 +716,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: "PT Sans Bold", sans-serif;
-  font-weight: 700;
   padding: 0;
   width: 400px;
   height: 384px;
@@ -743,48 +745,50 @@ body {
 }
 
 .service-title {
-  margin: 23px 0 20px;
+  font-family: "PT Sans Bold", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 23px 0 20px;
   text-transform: uppercase;
 }
 
 .service-description {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  margin: 0 75px 79px 75px;
   font-size: 18px;
   line-height: 21px;
+  margin: 0 75px 79px 75px;
   text-align: center;
   color: #333333;
 }
 
 .search-hotel {
   width: 1200px;
-  padding: 89px 0;
+  padding: 89px 0 92px;
   background: #FFFFFF;
   text-align: center;
 }
 
 .search-title {
   font-family: "PT Sans Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   margin-bottom: 29px;
   margin-top: 0;
   font-weight: bold;
   color: #000000;
-  font-size: 30px;
-  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .search-description {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  margin-bottom: 60px;
   font-size: 22px;
   line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 60px;
   color: #333333;
 }
 
@@ -800,12 +804,12 @@ body {
 
 .newsletter-title {
   font-family: "PT Sans Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   margin: 0;
   padding: 94px 0 29px;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -813,10 +817,10 @@ body {
 
 .newsletter-description {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  margin: 0 0 47px;
   font-size: 22px;
   line-height: 26px;
+  font-weight: 400;
+  margin: 0 0 47px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -956,6 +960,8 @@ body {
   position: relative;
   display: block;
   font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
   font-weight: 400;
   color: #FFFFFF;
   text-decoration: none;
@@ -1134,10 +1140,8 @@ body {
   align-items: center;
   height: 100%;
   justify-content: space-between;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   width: 143px;
-  padding: 0 14px;
+  /* padding: 0 14px; */
 }
 
 .catalog-filter-label:first-child::after {
@@ -1172,36 +1176,49 @@ body {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px 0px 0px 4px;
+} 
+
+.range-input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  padding-left: 14px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none; 
+  appearance: textfield;
 }
 
-.range-wrapper-inputs:focus {
+.range-input:focus {
+  width: 145px;
+  height: 48px;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
-  box-shadow: 0px 0px 0px 3px #81B3D2;
   border-radius: 4px 0px 0px 4px;
+  box-shadow: 0px 0px 0px 3px #81B3D2;
 }
 
-.range-wrapper-inputs:active {
+.range-input:active {
   background: #756257;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px 0 0 4px;
 }
 
-.range-input {
-  width: 40px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  background-color: transparent;
-  color: white;
-  border: none;
-  appearance: textfield;
-}
-
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.catalog-filter-label-decoration {
+  color: #ffffff;
+  opacity: 0.3;
+  padding-right: 14px;
 }
 
 .range-scale {
@@ -1263,11 +1280,6 @@ body {
 
 }
 
-.catalog-filter-label-decoration {
-  color: #ffffff;
-  opacity: 0.3;
-}
-
 .catalog-sorting {
   display: flex;
   justify-content: space-between;
@@ -1289,10 +1301,6 @@ body {
   width: 287px;
   height: 48px;
   margin: 44px 81px 42px 0;
-  outline: 2px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition: color ease-in-out .2s;
 }
 
 .select-control {
@@ -1302,8 +1310,16 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  padding: 10px 20px 13px 18px;
-  border: #ffffff;
+  padding: 0 35px 3px 17px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: color ease-in-out .2s;
+  outline: none;
+  appearance: none;
+  background-image: url('../images/dropdown.svg');
+  background-repeat: no-repeat;
+  background-position: 252px 50%;
   cursor: pointer;
 }
 
@@ -1312,14 +1328,14 @@ body {
   outline-offset: -3px;
   outline-style: solid;
   outline-color: #83B3D3;
-  transition: outline-color ease-in-out.2s;
-}
+}  
 
 .select-control:focus, .select-hotels-control:focus {
+  border: none;
   outline-width: 3px;
   outline-offset: -3px;
   outline-style: solid;
-  outline-color: #83B3D3;;
+  outline-color: #83B3D3;
 }
 
 .select-control:active, .select-hotels-control:active {
@@ -1370,36 +1386,49 @@ body {
   margin-top: 44px;
 }
 
+.button-light-current:hover {
+  outline-color: #83B3D3;
+  transition: outline-color ease-in-out.2s;
+}
+
+.button-light-current:focus {
+  outline-color: #83B3D3;
+}
+
+.button-light-current:active {
+  outline-color: #000000;
+}
+
 .catalog-list {
-  display: grid;
-  gap: 30px;
-  width: 1056px;
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
   margin-top: 0;
+  margin-bottom: 21px;
   padding: 0;
-  border-bottom: 1px solid #E5E5E5;
 }
 
 .catalog-card {
   display: grid;
-  grid-template-columns: 180px 197px 163px min-content;
-  grid-template-rows: auto auto 1fr auto;
-  width: 1056px;
+  grid-template-columns: 180px 35px min-content min-content 1fr min-content;
+  grid-template-rows: min-content min-content 37px;
   background-color: #FFFFFF;
   border-top: 1px solid #E5E5E5;
-  padding-top: 30px;
+  padding: 31px 0 29px 0;
 }
 
-.catalog-card:nth-child(4) {
-  margin-bottom: 30px;
+.catalog-card:last-child {
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .catalog-card-image {
-  grid-column: 1 / 2;
-  grid-row: 2 / -1;
+  grid-column: 1/2;
+  grid-row: 1/-1;
   width: 180px;
   height: 120px;
-  border: none;
+  object-fit: cover;
+  border-radius: none;
+  cursor: pointer
 }
 
 .catalog-card-image:hover {
@@ -1407,7 +1436,10 @@ body {
 }
 
 .catalog-card-image:focus {
-  outline: 3px solid #83B3D3;
+  outline-width: 3px;
+  outline-offset: -3px;
+  outline-color: #83B3D3;
+  outline-style: solid;
 }
 
 .catalog-card-image:active {
@@ -1415,13 +1447,17 @@ body {
 }
 
 .catalog-card-title {
-  grid-column: 2 / 4;
-  grid-row: 2 / 3;
-  margin: 0 0 0 37px;
+  width: auto;
+  grid-column: 3/6;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 0;
+  margin-top: -5px;
   font-family: "PT Sans Bold", sans-serif;
   font-weight: 700;
-  border: 3px solid transparent;
   font-size: 24px;
+  line-height: 31px;
+  border-radius: 10px;
   color: #000000;
   text-decoration: none;
   transition: color ease-in-out .2s;
@@ -1433,10 +1469,11 @@ body {
 
 .catalog-card-title:focus {
   color: #756257;
-  border: 3px solid #83B3D3;
+  outline-width: 3px;
+  outline-offset: 3px;
+  outline-color: #83B3D3;
+  outline-style: solid;
   box-sizing: border-box;
-  border-radius: 10px;
-  outline: none;
 }
 
 .catalog-card-title:active {
@@ -1444,44 +1481,47 @@ body {
 }
 
 .catalog-card-description {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin-bottom: 33px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  margin-left: 37px;
+  line-height: 23px;
   color: #333333;
-  padding-top: 2px;
 }
 
 .catalog-card-price {
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
+  grid-column: 4/5;
+  grid-row: 2/3;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 23px;
   color: #333333;
-  padding-top: 2px;
 }
 
 .catalog-card-button {
+  display: block;
+  box-sizing: border-box;
+  min-width: 119px;
+  min-height: 37px;
+  padding: 8px 31px 8px 31px;
+  margin-right: 9px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  cursor: pointer;
+  border: none;
   font-family: "PT Sans Bold", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
-  width: 151px;
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  grid-column: 2 / 3;
-  grid-row: 4 / 5;
-  margin-left: 37px;
-  padding: 9px 0 10px 0;
-  cursor: pointer;
-  border: none;
 }
 
 .catalog-card-button:hover {
@@ -1489,9 +1529,10 @@ body {
 }
 
 .catalog-card-button:focus {
-  outline: 4px solid #83B3D3;
-  box-sizing: border-box;
-  border-radius: 4px;
+  outline-width: 3px;
+  outline-offset: -3px;
+  outline-color: #83B3D3;
+  outline-style: solid;
 }
 
 .catalog-card-button:active {
@@ -1504,37 +1545,27 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  width: 160px;
+  display: block;
+  box-sizing: border-box;
+  min-width: 160px;
+  min-height: 37px;
+  padding: 0 20px;
+  grid-column: 4/5;
+  grid-row: 3/4;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   outline: none;
   border-radius: 4px;
-  grid-column: 3 / 4;
-  grid-row: 4 / 5;
   color: #FFFFFF;
   background-color: #83B3D3;
   border:none;
   cursor: pointer;
 }
 
-.catalog-card-important-favorite {
-  font-family: "PT Sans Bold", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  width: 160px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  grid-column: 3 / 4;
-  grid-row: 4 / 5;
-  color: #FFFFFF;
+.catalog-card-important.is-favorites {
   background-color: #7DB54F;
-  border:none;
-  cursor: pointer;
-  transition: background-color ease-in-out .2s;
+  padding: 0 20px;
 }
 
 .catalog-card-important:hover {
@@ -1576,48 +1607,47 @@ body {
   opacity: 0.3;
 }
 
-.catalog-card-rate-icons {
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
+.catalog-card-rate-list {
+  max-width: 160px;
+  grid-column: -1/-2;
+  grid-row: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-bottom: 1px;
   list-style-type: none;
-  padding: 0;
   fill: #83B3D3;
 }
 
-.hotel-rating-stars-one {
-  margin-left: 385px;
+.catalog-card-rate-item {
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 17px;
+  margin-top: -3px;
+  cursor: auto;
 }
 
-.hotel-rating-stars-two {
-  margin-left: 405px;
-}
-
-.hotel-rating-stars-three {
-  margin-left: 410px;
-}
-
-.hotel-rating-stars-four {
-  margin-left: 410px;
-}
-
-.star {
-  margin-right: 5px;
+.catalog-card-rate-item:not(:last-child) {
+  margin-right: 7px;
 }
 
 .catalog-card-rate-label {
-  grid-column: 4 / 5;
-  grid-row: 4 / 5;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
   width: 160px;
-  background-color: #F2F2F2;
-  border-radius: 4px;
-  margin: 0 0 0 354px;
-  padding: 9px 0;
+  margin: 0;
+  padding: 7px 0 10px;
+  grid-column: -1/-2;
+  grid-row: 3/4;
+  justify-self: end;
+  font-size: 16px;
   text-align: center;
   text-transform: uppercase;
+  background-color: #F2F2F2;;
+  border-radius: 4px;
 }
 
 .dowload-product {
@@ -1642,10 +1672,9 @@ body {
 }
 
 .dowload-product:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #756257;
   box-sizing: border-box;
   border-radius: 4px;
-
 }
 
 .dowload-product:active {
@@ -1691,6 +1720,7 @@ body {
 }
 
 .pagination-link:focus {
+  color: #FFFFFF;
   background: #68A2CA;
   outline-width: 3px;
   outline-offset: -3px;
@@ -1717,27 +1747,39 @@ body {
 .pagination-link {
   font-family: "PT Sans Bold", sans-serif;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   color: #FFFFFF;
-  font-size: 20px;
   text-decoration: none;
 }
 
 .pagination-link-current {
   font-family: "PT Sans Bold", sans-serif;
   font-weight: 700;
-  color: #000000;
   font-size: 20px;
+  line-height: 26px;
+  color: #000000;
   text-decoration: none;
 }
 
 .select-hotels-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
   margin: 33px 0 93px 47px;
-  padding-left: 13px;
+  padding: 10px 14px;
+  appearance: none;
+  background-image: url('../images/dropdown.svg');
+  background-repeat: no-repeat;
+  background-position: 125px 50%;
+  font-size: 18px;
+  line-height: 23px;
   width: 160px;
   height: 48px;
   border: 2px solid #E6E6E6;
@@ -1747,6 +1789,8 @@ body {
 .sorting-page {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
   padding-top: 14px;
 }
 
@@ -1759,11 +1803,11 @@ body {
 
 .catalog-newsletter-title {
   font-family: "PT Sans Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   margin: 0 240px 29px 240px;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -1922,10 +1966,11 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
+  display: none;
 }
 
-.modal-container-close {
-  display: none;
+.modal-container-open {
+  display: block;
 }
 
 .modal {
@@ -1937,7 +1982,6 @@ body {
 
 .modal-content {
   width: 575px;
-  height: 437px;
 }
 
 .modal-auth {
@@ -2046,6 +2090,7 @@ body {
   background-image: url("../images/calendar.svg");
   background-position: right;
   background-repeat: no-repeat;
+  font: inherit;
 }
 
 .appointment-form-field:hover {
@@ -2058,7 +2103,7 @@ body {
   outline-color: #83B3D3;
   outline-style: solid;
   background: #E6E6E6;
-} 
+}
 
 .appointment-form-field:active {
   outline-width: 3px;
@@ -2066,12 +2111,13 @@ body {
   outline-color: #000000;
   outline-style: solid;
   background: #ffffff;
-} 
+}
 
 .appointment-info {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 40px;
   margin: 0 0 0 152px;
   padding: 0;
   color: #FF5757;
@@ -2081,7 +2127,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  /* line-height: 40px; */
+  line-height: 40px;
   margin: 0 0 0 152px;
   padding: 0;
   color: #333333;
@@ -2105,6 +2151,7 @@ body {
   line-height: 40px;
   width: 70px;
   margin: 0;
+  font: inherit;
 }
 
 .amount-of-adults,
@@ -2150,7 +2197,7 @@ body {
   outline-color: #83B3D3;
   outline-style: solid;
   background-color: #ffffff;
-} 
+}
 
 .button-pluse {
   background-image: url("../images/plus.svg");
@@ -2159,17 +2206,13 @@ body {
   background-color: #f2f2f2;
 }
 
-button, input {
-  overflow: visible;
-  font: inherit;
-}
-
 .amount-field {
   width: 60px;
   height: 48px;
   border: none;
   background-color: #f2f2f2;
   text-align: center;
+  outline: 2px solid #f2f2f2;
 }
 
 .amount button[name="plus-adult"] {
@@ -2197,9 +2240,13 @@ button, input {
   border-radius: 50%;
 }
 
+.popover-info-open {
+  display: block;
+}
+
 .popover-info {
   position: absolute;
-  top: 397px;
+  top: 435px;
   right: 100px;
   z-index: 1;
   width: 256px;
@@ -2208,7 +2255,7 @@ button, input {
   background: #333333;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  display: no;
+  display: none;
 }
 
 .popover-info::before {
@@ -2229,4 +2276,5 @@ button, input {
   padding: 15px 18px 18px 22px;
   margin: 0;
 }
+
 
